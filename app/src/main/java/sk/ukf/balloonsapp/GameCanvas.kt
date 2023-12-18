@@ -8,7 +8,6 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.view.MotionEvent
 import android.view.View
-import sk.ukf.baloonsapp.R
 import kotlin.math.pow
 import kotlin.math.sqrt
 

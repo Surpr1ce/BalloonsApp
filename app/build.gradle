@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'sk.ukf.baloonsapp'
+    namespace 'sk.ukf.balloonsapp'
     compileSdk 34
 
     defaultConfig {
-        applicationId "sk.ukf.baloonsapp"
+        applicationId "sk.ukf.balloonsapp"
         minSdk 24
         targetSdk 34
         versionCode 1
