@@ -10,6 +10,7 @@ import android.view.MotionEvent
 import android.view.View
 import kotlin.math.pow
 import kotlin.math.sqrt
+import kotlin.random.Random
 
 class GameCanvas (context: Context) : View(context) {
 
@@ -52,12 +53,12 @@ class GameCanvas (context: Context) : View(context) {
     }
 
     fun update() {
-        if (balloons.size < 20 && Math.random() > 0.9) {
+        if (balloons.size < 20 && Random.nextDouble() > 0.9) {
             val balloon = Balloon(
-                70 + (Math.random() * (screenX - 140)).toFloat(),
+                (70 + Random.nextDouble() * (screenX - 140)).toFloat(),
                 screenY,
-                colors[(Math.random() * colors.size).toInt()],
-                (1 + (Math.random() * 10)).toInt()
+                colors[Random.nextInt(colors.size)],
+                (1 + Random.nextDouble() * 10).toInt()
             )
             balloons.add(balloon)
         }
